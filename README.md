@@ -1,4 +1,4 @@
-# Asterisk CEL AMQP
+# Asterisk CDR AMQP
 
 This was originally taken from this reviewboard https://reviewboard.asterisk.org/r/4365/
 
@@ -11,14 +11,14 @@ To install
     make install
     make samples
 
-Configure the file in /etc/asterisk/cel_amqp.conf
+Configure the file in /etc/asterisk/cdr_amqp.conf
 
 You need to have res_amqp.so loaded.
 
-Please restart asterisk before loading cel_amqp.so for the documentation.
+Please restart asterisk before loading cdr_amqp.so for the documentation.
 
 To load module
 
-    CLI> module load cel_amqp.so
+    CLI> module load cdr_amqp.so
 
 There is a amqp command on the CLI to get the status.
