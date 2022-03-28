@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE docs SYSTEM "appdocsxml.dtd">
+<docs xmlns:xi="http://www.w3.org/2001/XInclude">
+   <configInfo name="cdr_amqp" language="en_US">
+		<synopsis>AMQP CDR Backend</synopsis>
+		<configFile name="cdr_amqp.conf">
+			<configObject name="global">
+				<synopsis>Global configuration settings</synopsis>
+				<configOption name="loguniqueid">
+					<synopsis>Determines whether to log the uniqueid for calls</synopsis>
+					<description>
+						<para>Default is no.</para>
+					</description>
+				</configOption>
+				<configOption name="loguserfield">
+					<synopsis>Determines whether to log the user field for calls</synopsis>
+					<description>
+						<para>Default is no.</para>
+					</description>
+				</configOption>
+				<configOption name="connection">
+					<synopsis>Name of the connection from amqp.conf to use</synopsis>
+					<description>
+						<para>Specifies the name of the connection from amqp.conf to use</para>
+					</description>
+				</configOption>
+				<configOption name="queue">
+					<synopsis>Name of the queue to post to</synopsis>
+					<description>
+						<para>Defaults to asterisk_cdr</para>
+					</description>
+				</configOption>
+				<configOption name="exchange">
+					<synopsis>Name of the exchange to post to</synopsis>
+					<description>
+						<para>Defaults to empty string</para>
+					</description>
+				</configOption>
+			</configObject>
+		</configFile>
+	</configInfo>
+</docs>
